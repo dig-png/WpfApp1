@@ -1,0 +1,24 @@
+<Window x:Class="StudentGradesWPF.AddEditStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить студента"
+        Height="250" 
+        Width="300">
+    <Grid Margin="10">
+        <StackPanel>
+            <Label Content="Имя:"/>
+            <TextBox x:Name="TxtFirstName" Margin="0,0,0,10"/>
+
+            <Label Content="Фамилия:"/>
+            <TextBox x:Name="TxtLastName" Margin="0,0,0,10"/>
+
+            <Label Content="Группа:"/>
+            <TextBox x:Name="TxtGroup" Margin="0,0,0,20"/>
+
+            <Button Content="Сохранить" 
+                    Width="100"
+                    HorizontalAlignment="Center"
+                    Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
